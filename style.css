@@ -1,0 +1,584 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    font-family: system-ui;
+    
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.header{
+    position: relative;
+}
+.image-container{
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+
+.header-body-section{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70%;
+    color: white;
+}
+
+.nav{
+    font-weight: 550;
+    height: 50px;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-contaier{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.logo-contaier p{
+    padding: 6px;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li{
+    padding: 0px 2px;
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.header-body-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-header-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.zomato-logo{
+    width: 230px;
+    object-fit:contain;
+    margin-top: 60px;
+    margin-bottom: 20px;;
+}
+
+.para{
+    margin: 25px 0;
+}
+
+.search-container{
+    background-color: white;
+    width: 55%;
+    height: 40px;
+    max-width: 550px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: black;
+}
+
+.detectionLocation{
+    color: rgb(228, 121, 121);
+    font-size: 20px;
+}
+
+.fa-caret-down{
+    color: #636060;
+}
+
+.detectionLocation input{
+    border: none;
+    font-size: 12px;
+}
+
+.search-item{
+    color: #636060;
+}
+
+.line{
+    padding: 8px;
+}
+
+.search-item input{
+    border: none;
+    font-size: 12px;
+    padding: 7px;
+}
+
+/*------Services------*/
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.services{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-item:hover{
+    transition: transform 0.7s;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.service-item{
+    border: 0.1px solid rgb(212, 208, 208);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 32%;
+    height: 225px;
+    transition: transform 0.3s ease;
+}
+
+.service-item img{
+    overflow: hidden;
+    width: 350px;
+    height: 150px;
+}
+
+.service-item h3{
+    font-size: 18px;
+    color: #333232;
+    margin-left: 26px;
+    border: 5px;
+}
+
+.txt-1{
+    width: 150;
+    height: 32;
+    margin-top: 10px;
+}
+
+.service-item p{
+    color: #666;
+    font-size: 14px;
+    margin-left: 26px;
+ 
+}
+
+/*----Collection----*/
+
+/* Container Styling */
+.para-con p{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.para-con-under{
+    display: flex;
+}
+
+.txt-2{
+    position: absolute;
+    margin-right: 5pxpx
+}
+
+.under-para{
+    padding-left: 190px;
+    color: rgb(248, 119, 132);
+}
+/*----Collections----*/
+
+.collections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px; /* Adjusts space between cards */
+}
+
+/* Collection Card Styling */
+.collection-item {
+    border: 0.1px solid rgb(212, 208, 208);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 24%; /* Adjust the width of each card to fit four in a row */
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.collection-item img {
+    width: 100%;
+    height: 300px; /* Set a fixed height for the images */
+    object-fit: cover;
+}
+
+.txt-2 {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Add a dark overlay background */
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.collection-item h4 {
+    font-family: system-ui;
+    font-size: 14px;
+    margin: 0;
+}
+
+.collection-item p {
+    color: #f5eeee;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Heading */
+h2 {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+/*----localities----*/
+
+.loc-head{
+    font-size: 25px;
+}
+
+.localities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Auto-adjust columns */
+    grid-gap: 20px; /* Space between the grid items */
+    margin-top: 30px;
+}
+
+.places {
+    border: 1px solid rgb(235,235,235);
+    box-shadow: 0 1px 3px rgb(226,233,233);
+    width: 100%; /* Adjust width to fit the grid */
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.places div {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding for better alignment */
+}
+
+.places div span {
+    color: rgb(31, 30, 30);
+    font-size: 1.2rem;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: -5px;
+}
+
+.places div p {
+    color: rgb(94, 92, 92);
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 3px;
+}
+
+.see { 
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.see span{
+    margin-left: 70px;
+}
+
+/*-----Download-----*/
+
+.getting {
+    display: flex;
+    margin: 90px 0;
+    justify-content: center;
+    padding: 60px 0;
+    background-color: #fcfbf7;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.contact {
+    width: 47%;
+    max-width: 900px;
+}
+
+.contact img {
+    width: 230px;
+    padding-right: 50px;
+}
+
+.address {
+    max-width: 470px;
+}
+
+.address h2{
+    margin-top: 2%;
+    font-size: 35px;
+    font-weight: lighter;
+}
+.address p {
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: #5c5b5b;
+}
+
+.radio {
+    display: flex;
+    justify-content: space-between;
+    max-width: 270px;
+    padding-bottom: 20px;
+}
+
+.radio label {
+    font-size: 16px;
+    color: #313131;
+}
+
+.radio input[type="radio"] {
+    accent-color: #ff5c5c;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.email input {
+    height: 46px;
+    width: 270px;
+    border: 1px solid #b8b7b7;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 14px;
+    outline-color: #f76f6f;
+    margin-right: 10px;
+}
+
+.email button {
+    width: 160px;
+    height: 46px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff6868;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.download {
+    font-size: smaller;
+    color: grey;
+    margin: 20px 0 0; /* Reduce the top and bottom margin */
+}
+
+.app img {
+    cursor: pointer;
+    width: 180px;
+    margin-right: 1px; /* Adjust the space between the app images */
+    margin-top: 3px; /* Add a small margin at the top to decrease space from the paragraph */
+}
+
+/*----EXPLORE----*/
+
+.center-section {
+    margin-top: 5px;
+    max-width: 600px; /* Adjust this if needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-section h1 {
+    font-weight: normal;
+    font-size: 22px;
+    color: rgb(19, 18, 18);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+details {
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+summary {
+    font-weight: 400;
+    color: rgb(17, 17, 17);
+    padding: 17px;
+    font-size: 20px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* This aligns the text to the left and icon to the right */
+    align-items: center; /* Vertically center the icon */
+}
+
+summary::marker {
+    display: none; /* Hide the default marker */
+}
+
+details[open] summary i {
+    transform: rotate(180deg); /* Rotate the icon when open */
+}
+
+.fa-solid {
+    transition: transform 0.3s ease; /* Smooth transition for icon rotation */
+}
+
+/*-----footer-----*/
+
+.footer{
+    width: 100%;
+    background: rgb(248, 248, 248);
+}
+
+.sec{
+    padding: 40px 120px;
+    justify-content: space-between;
+}
+
+.first{
+    padding: 0px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first img{
+    width: 113px;
+    height: 25px;
+}
+
+.first-la{
+    display: flex;
+}
+
+.first-la span{
+    padding: 6px;
+    border: 1px solid rgb(155, 153, 153);
+    border-radius: 5px;
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+.first-la img{
+    padding-top: 10px;
+    margin-right: 5px;
+    width: 25px;
+    height: 15px;
+}
+
+.first-la svg{
+    padding-top: 1px;
+    margin-right: 0px;
+    width: 25px;
+    height: 15px;
+}
+
+.second{
+    padding: 0px 120px;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.second div{
+    width: 200px;
+}
+
+.second h4{
+    font-weight: 400;
+    color: black;
+    white-space: nowrap;
+}
+
+.second a{
+    display: inline-block;
+    width:100px;
+    margin-bottom: 7px;
+    white-space: nowrap;
+    color: gray;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.second img{
+    width: 120px;
+    height: 35px;
+    margin-top: 11px;
+    cursor: pointer;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+}
+
+.social div{
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+.social i{
+    padding: 8px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.third{
+    padding: 0px 120px;
+    color: gray;
+    font-size: 12px;
+}
